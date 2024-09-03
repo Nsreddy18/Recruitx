@@ -12,10 +12,7 @@ from sqlalchemy import func
 import sqlite3
 
 
-app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
-app.config['SECRET_KEY']='project'
-db=SQLAlchemy(app)
+
 
 login_manager=LoginManager()
 login_manager.init_app(app)
